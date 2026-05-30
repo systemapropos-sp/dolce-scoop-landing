@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer base {
+  :root { --ds-rose: #FF6B7A; --ds-cream: #FFF8F0; --ds-chocolate: #3D1F00; --ds-caramel: #D4A574; }
+  html { scroll-behavior: smooth; }
+  body { font-family: 'Inter', system-ui, sans-serif; background: #FFF8F0; color: #3D1F00; overflow-x: hidden; -webkit-font-smoothing: antialiased; }
+  h1, h2, h3, h4, h5, h6 { font-family: 'Playfair Display', serif; }
+  ::selection { background: rgba(255, 107, 122, 0.2); color: #3D1F00; }
+}
+@layer utilities {
+  .no-scrollbar::-webkit-scrollbar { display: none; }
+  .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+}
